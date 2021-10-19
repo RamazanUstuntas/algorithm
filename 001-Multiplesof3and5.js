@@ -366,12 +366,6 @@ Changes not staged for commit:
 	[31mmodified:   001-Multiplesof3and5.js[m
 
 Untracked files:
-  (use "git add <file>..." to include in what will be cnot staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   001-Multiplesof3and5.js[m
-
-Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	[31m003-LargestPrimeFactor.js[m
 
@@ -431,4 +425,6 @@ Untracked files:
 	[31m003-LargestPrimeFactor.js[m
 
 nothing added to commit but untracked files present (use "git add" to track)
-]0;siradanpil@siradanpilPC: ~/algorithm[01;32msirada
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git add ..[K
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git commit -m ""[1P""[C[K[CWhat is the largest prime factor of the number 600851475143 ?"
+[master 1c
