@@ -366,4 +366,69 @@ Changes not staged for commit:
 	[31mmodified:   001-Multiplesof3and5.js[m
 
 Untracked files:
-  (use "git add <file>..." to include in what will be c
+  (use "git add <file>..." to include in what will be cnot staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   001-Multiplesof3and5.js[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m003-LargestPrimeFactor.js[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git pull
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  50% (1/2)Unpacking objects: 100% (2/2)Unpacking objects: 100% (2/2), 672 bytes | 672.00 KiB/s, done.
+From github.com:RamazanUstuntas/algorithm
+   0121fe0..b0fd41c  master     -> origin/master
+Updating 0121fe0..b0fd41c
+error: Your local changes to the following files would be overwritten by merge:
+	001-Multiplesof3and5.js
+Please commit your changes or stash them before you merge.
+Aborting
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   001-Multiplesof3and5.js[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m003-LargestPrimeFactor.js[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git add 001-Multiplesof3and5.js 
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git commit -m ""[KFind the sum of all the multiples of 3 or 5 below 1000."
+[master 289170f] Find the sum of all the multiples of 3 or 5 below 1000.
+ 1 file changed, 101 insertions(+), 1 deletion(-)
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git push
+To github.com:RamazanUstuntas/algorithm.git
+ [31m! [rejected]       [m master -> master (non-fast-forward)
+[31merror: failed to push some refs to 'git@github.com:RamazanUstuntas/algorithm.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git pull
+CONFLICT (modify/delete): 001-Multiplesof3and5.js deleted in b0fd41c4581d8249f0c7ae18e89151c8a46e049f and modified in HEAD. Version HEAD of 001-Multiplesof3and5.js left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git reset
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msiradanpil@siradanpilPC[00m:[01;34m~/algorithm[00m$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m003-LargestPrimeFactor.js[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;siradanpil@siradanpilPC: ~/algorithm[01;32msirada
