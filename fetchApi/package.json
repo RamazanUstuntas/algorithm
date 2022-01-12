@@ -1,0 +1,11 @@
+{
+  "name": "fetchapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetchapi.js",
+  "scripts": {
+    "start": "node fetchapi.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
