@@ -79,3 +79,32 @@
 
 --city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.<br>
 `SELECT country_id, count(city) FROM city GROUP BY country_id ORDER BY count(city) DESC LIMIT 1;`
+
+--test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.<br>
+```
+CREATE TABLE employee (
+	id INT,
+	first_name VARCHAR(50),
+	birthday DATE,
+	email VARCHAR(100)
+);
+```
+--Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.(Mockaroo'dan ürettiğiniz random verileri import ederek veya query run ederek ekleyin. Var olan tabloya veri eklemek aşağıdaki yapıya benzer.)<br>
+`insert into employee (id, first_name, birthday, email) values (1, 'Cathi', '15/01/1971', 'cblaxeland0@virginia.edu');`<br>
+`insert into employee (id, first_name, birthday, email) values (2, 'Nata', '13/03/1988', 'nablewhite1@rediff.com');`
+
+--Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.<br>
+```
+UPDATE employee 
+SET first_name = 'Ramazan',
+	birthday = '18/01/1997',
+	email = 'ustuntasramazan@outlook.com'
+WHERE id = 1;
+
+```
+--Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.<br>
+
+```
+DELETE FROM employee 
+WHERE id = 1;
+```
