@@ -126,3 +126,18 @@ WHERE id = 1;
 
 --customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız.<br>
 `SELECT rental_id, first_name, last_name FROM customer FULL JOIN rental ON customer.customer_id=rental.customer_id;`
+
+--actor ve customer tablolarında bulunan first_name sütunları için tüm verileri sıralayalım.<br>
+`(SELECT first_name FROM actor) UNION (SELECT first_name FROM customer);`
+--(TEKRARLI VERİLERİ DE LİSTELEMEK İÇİN)<br>
+`(SELECT first_name FROM actor) UNION ALL (SELECT first_name FROM customer);`
+
+--actor ve customer tablolarında bulunan first_name sütunları için kesişen verileri sıralayalım.<br>
+`(SELECT first_name FROM actor) INTERSECT (SELECT first_name FROM customer);`
+---(TEKRARLI VERİLERİ DE LİSTELEMEK İÇİN)<br>
+`(SELECT first_name FROM actor) INTERSECT ALL (SELECT first_name FROM customer);`
+
+--actor ve customer tablolarında bulunan first_name sütunları için ilk tabloda bulunan ancak ikinci tabloda bulunmayan verileri sıralayalım.<br>
+`(SELECT first_name FROM actor) EXCEPT (SELECT first_name FROM customer);`
+---(TEKRARLI VERİLERİ DE LİSTELEMEK İÇİN)<br>
+`(SELECT first_name FROM actor) EXCEPT ALL (SELECT first_name FROM customer);`
