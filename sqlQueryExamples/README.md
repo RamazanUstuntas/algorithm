@@ -164,3 +164,12 @@ INNER JOIN payment ON payment.customer_id=customer.customer_id
 GROUP BY customer.customer_id 
 ORDER BY count(customer.customer_id) DESC;
 ```
+---(EN FAZLA HARCAYAN MÜŞTERİ İÇİN)
+```
+SELECT SUM(amount), customer.first_name, customer.last_name
+FROM payment
+JOIN customer ON customer.customer_id = payment.customer_id
+GROUP BY payment.customer_id, customer.first_name, customer.last_name
+ORDER BY SUM(amount) DESC
+LIMIT 1;
+```
