@@ -1,3 +1,6 @@
+### TÜM ÖRNEK QUERY SENARYOLARI DVDRENTAL VERİTABANI ÜZERİNDE GERÇEKLEŞTİRİLMİŞTİR.
+# İNDİRME LİNKİ -> [https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip](https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip)
+
 --film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.<br>
 `SELECT title,description FROM film;`
 
