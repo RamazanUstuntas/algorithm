@@ -1,3 +1,6 @@
 # algorithm
 ---
-JavaScript Solutions
+JavaScript Solutions<br>
+
+
+"You can use as you wish."
